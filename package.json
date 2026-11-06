@@ -1,0 +1,13 @@
+{
+  "name": "siddiqui-rehab-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Siddiqui Rehab site",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/site.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
