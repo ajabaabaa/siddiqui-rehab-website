@@ -5,6 +5,7 @@
   "description": "Siddiqui Rehab site",
   "scripts": {
     "start": "node server.js",
+    "build:i18n": "node scripts/build-bilingual.js",
     "test": "node --test tests/site.test.js"
   },
   "engines": {

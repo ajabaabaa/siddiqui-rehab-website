@@ -1,0 +1,122 @@
+/* Siddiqui Rehab visual system: shared across English and Urdu. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');
+:root{--navy:#102e62;--deep:#0d2853;--teal:#218c83;--mint:#70bf9d;--gold:#cba75d;--light:#f8fbfa;--line:#d9e9e6}
+body{overflow-x:hidden}
+.utility-bar{background:#102b59;color:#dcecf4;font-size:11px;letter-spacing:.35px}
+.utility-inner{display:flex;justify-content:space-between;align-items:center;gap:22px;min-height:33px}
+.utility-bar a{color:#f3faf8;text-decoration:none;font-weight:700;white-space:nowrap}
+.utility-bar a:hover{text-decoration:underline}
+.site-header{box-shadow:0 6px 26px #09274709;border-bottom:1px solid #dbe8e5}
+.nav{min-height:86px;gap:23px}
+.brand{flex-shrink:0;gap:12px}
+.brand img{filter:drop-shadow(0 3px 6px #0b39581d)}
+.brand strong{font-size:22px}
+.brand small{font-size:9px}
+.nav nav{order:2;margin-inline-start:auto;gap:20px}
+.nav nav>a:not(.nav-cta){position:relative;padding:9px 2px}
+.nav nav>a:not(.nav-cta)::after{content:'';position:absolute;bottom:0;inset-inline-start:0;width:0;height:2px;background:var(--teal);transition:width .2s}
+.nav nav>a:not(.nav-cta):hover::after{width:100%}
+.nav .nav-cta{box-shadow:0 8px 18px #1534631a;padding:14px 17px}
+.header-actions{order:3;display:flex;align-items:center;gap:12px}
+.language-switch{display:flex;align-items:center;gap:3px;border-radius:28px;padding:4px;border:1px solid #d6e8e5;background:#f1f8f6;white-space:nowrap}
+.language-switch a{text-decoration:none;font-weight:800;color:#657b86;border-radius:26px;font-size:12px;line-height:1.5;padding:7px 12px;transition:background .2s,color .2s}
+.language-switch .selected{color:#fff;background:#165a68;box-shadow:0 2px 8px #155a6b26}
+.language-switch a:not(.selected):hover{color:var(--navy);background:white}
+.hero{background:radial-gradient(circle at 85% 13%,#d3eeea 0,transparent 36%),linear-gradient(110deg,#fbfdfb 0%,#eef9f6 60%,#dff3ec 100%)}
+.hero::before{content:'';position:absolute;top:70px;right:30px;width:360px;height:360px;opacity:.12;background-image:radial-gradient(#1c8c83 1.35px,transparent 1.35px);background-size:17px 17px;mask-image:linear-gradient(180deg,black,transparent)}
+.hero-layout{padding-top:82px;padding-bottom:86px}
+.hero .eyebrow{color:#247f7a}
+.hero h1{letter-spacing:-3.8px}
+.hero h1 em{position:relative;display:inline-block;color:#218b83}
+.hero h1 em:after{content:'';height:7px;background:#cce9b9;position:absolute;bottom:3px;left:2px;right:2px;z-index:-1;border-radius:5px}
+.hero-lead{color:#4b6375;line-height:1.85}
+.hero-actions .button{box-shadow:0 9px 26px #092b5612}
+.hero-actions .button.secondary{box-shadow:none;background:#ffffffb0}
+.hero-foot{border-top:1px solid #cddfdc;padding-top:27px;margin-top:40px}
+.hero-foot .experience>b{color:var(--navy)}
+.visual-frame{border:9px solid #fff;box-shadow:0 25px 68px #12395923;overflow:hidden;background:#aad7cf;border-radius:190px 190px 30px 30px}
+.abstract-art{background:radial-gradient(circle at 32% 20%,#d8f1e6 0,#c5ebe0 30%,#8fc8ba 83%)}
+.art-circle{border:1.5px solid #fffe}
+.art-circle-one{width:440px;height:440px;left:5%}
+.art-circle-two{width:290px;height:290px;left:25%}
+.art-sweep{background:linear-gradient(135deg,#17566b,#123960);top:71%}
+.art-figure{filter:drop-shadow(7px 7px 5px #17406916)}
+.figure-head,.figure-body,.figure-arm,.figure-leg{background:#14396d}
+.hero-corner-accent{position:absolute;z-index:2;inset-inline-end:-18px;top:50px;width:95px;height:95px;border:10px solid #caa95e;border-radius:50%;pointer-events:none;opacity:.89}
+.visual-message{padding:34px 32px;background:linear-gradient(transparent,#102f62e8)}
+.visual-kicker{color:#c3eddd}
+.floating-note{border:1px solid #e5efed;box-shadow:0 16px 52px #082c531c;padding:17px 20px}
+.trust-bar{background:#15396e;color:white;position:relative}
+.trust-grid{display:grid;grid-template-columns:1fr 1fr 1.1fr;align-items:center}
+.trust-grid>div{display:flex;align-items:center;justify-content:center;gap:17px;min-height:116px;padding:12px 28px;border-inline-end:1px solid #ffffff30}
+.trust-grid>div:last-child{border:0}
+.trust-num{font-size:40px;line-height:1;font-family:Manrope,sans-serif;letter-spacing:-2px;font-weight:800;color:#99d6bc;white-space:nowrap}
+.trust-plus{font-size:23px;vertical-align:top}
+.trust-icon{font-size:38px;color:#99d6bc}
+.trust-text{font-size:12px;font-weight:700;line-height:1.5;letter-spacing:.25px;color:#eef8f9}
+.section-heading{margin-bottom:43px}
+.section-heading .eyebrow,.about .eyebrow,.contact .eyebrow{font-size:11px}
+.service-card{background:#fff;box-shadow:0 8px 33px #183b4e08;min-height:275px;overflow:hidden;padding:30px 31px;border:1px solid #dfebe8}
+.service-card:before{content:'';position:absolute;inset-inline-start:30px;top:0;height:3px;width:48px;background:#a9d6bb;border-radius:0 0 5px 5px}
+.service-card.wide{background:linear-gradient(140deg,#e9f8f2 10%,#f7fbf8 95%)}
+.service-card:hover{box-shadow:0 17px 50px #183b4e14}
+.service-symbol{margin:30px 0 18px;width:56px;height:56px;border:1px solid #c6e6dc;background:#e8f7f0;color:#176b75;border-radius:16px}
+.service-symbol svg{width:32px;height:32px}
+.service-card h3{font-size:20px;letter-spacing:-.65px}
+.service-card p{color:#60727e}
+.about{background:linear-gradient(135deg,#0d2a57 20%,#153e77 100%);position:relative;overflow:hidden}
+.about:before{content:'';position:absolute;right:-100px;top:-120px;border:1px solid #ffffff15;border-radius:50%;height:650px;width:650px;pointer-events:none}
+.about-quote{position:relative}
+.about-quote:before{content:'';position:absolute;inset:0 auto auto -28px;width:4px;height:240px;background:linear-gradient(#b7db8b,transparent)}
+.about-copy .text-link{color:#fff}
+.journey{background:#f6faf8}
+.steps>div{padding-top:30px}
+.steps span{color:#2a9a8d}
+.steps h3{font-family:Manrope,sans-serif;letter-spacing:-.5px}
+.contact{background:linear-gradient(126deg,#12396b,#0b2755)}
+.contact-panel{background:#ffffff0d;border:1px solid #ffffff24;box-shadow:0 24px 60px #051c4230;gap:25px}
+.contact-panel>div{padding-top:20px;border-top:1px solid #ffffff21}
+.contact-panel .panel-title{display:flex;justify-content:space-between;align-items:center;color:#a8d9bb!important;font-size:11px!important;letter-spacing:2px;font-weight:800;margin:0!important}
+.contact-panel address{color:#fff}
+.footer{border-top:1px solid #ffffff19}
+.mobile-appointment{display:none}
+/* Urdu has native right-to-left semantics, visible Nastaliq display and legible Naskh body. */
+html[lang="ur"] body{font-family:"Noto Naskh Arabic","Noto Nastaliq Urdu",sans-serif;font-size:17px}
+html[lang="ur"] h1,html[lang="ur"] h2,html[lang="ur"] h3,html[lang="ur"] .about-quote p,html[lang="ur"] .visual-message strong{font-family:"Noto Nastaliq Urdu","Noto Naskh Arabic",serif;letter-spacing:0;font-weight:700}
+html[lang="ur"] .brand strong{font-family:"Noto Nastaliq Urdu",serif;font-size:24px;letter-spacing:0;line-height:2;white-space:nowrap}
+html[lang="ur"] .brand small{font-family:"Noto Naskh Arabic",sans-serif;font-size:11px;letter-spacing:0;margin-top:-6px}
+html[lang="ur"] .nav nav a,html[lang="ur"] .button,html[lang="ur"] .language-switch a{font-family:"Noto Naskh Arabic",sans-serif;font-size:15px}
+html[lang="ur"] .language-switch a[lang="en"]{font-family:Manrope,sans-serif;font-size:12px}
+html[lang="ur"] .eyebrow{font-size:15px;letter-spacing:0;line-height:1.9}
+html[lang="ur"] .hero-layout{grid-template-columns:1.1fr .9fr}
+html[lang="ur"] .hero h1{font-size:clamp(33px,3.8vw,58px);white-space:normal;line-height:2.05;letter-spacing:0;margin-bottom:18px}
+html[lang="ur"] .hero h1 em:after{height:9px;bottom:7px}
+html[lang="ur"] .hero-lead{font-size:19px;line-height:2.1}
+html[lang="ur"] .hero-foot{line-height:2}
+html[lang="ur"] .hero-foot .experience>b,html[lang="ur"] .trust-num{font-family:Manrope,sans-serif}
+html[lang="ur"] .experience>span{font-size:15px;letter-spacing:0}
+html[lang="ur"] .visual-kicker{font-size:14px;letter-spacing:0}
+html[lang="ur"] .visual-message strong{font-size:21px;line-height:2.1}
+html[lang="ur"] .floating-note{font-size:15px}
+html[lang="ur"] .trust-text{font-size:17px;letter-spacing:0}
+html[lang="ur"] .section-heading h2,html[lang="ur"] .about h2,html[lang="ur"] .contact h2{font-size:clamp(31px,3.9vw,49px);line-height:2;letter-spacing:0}
+html[lang="ur"] .section-heading>p,html[lang="ur"] .about-copy>p:not(.eyebrow){font-size:18px;line-height:2}
+html[lang="ur"] .service-index{font-size:15px;letter-spacing:0}
+html[lang="ur"] .service-card h3{font-size:22px;line-height:2;letter-spacing:0;margin-bottom:6px}
+html[lang="ur"] .service-card p,html[lang="ur"] .steps p{font-size:17px;line-height:2}
+html[lang="ur"] .about-quote p{font-size:27px;line-height:2.1}
+html[lang="ur"] .steps h3{font-family:"Noto Nastaliq Urdu",serif;letter-spacing:0;font-size:22px;line-height:2}
+html[lang="ur"] .contact-grid>div>p:not(.eyebrow){font-size:18px;line-height:2}
+html[lang="ur"] .contact-label{font-size:15px;letter-spacing:0}
+html[lang="ur"] .contact-panel address{font-size:19px;line-height:1.9}
+html[lang="ur"] .contact-panel a.directions,html[lang="ur"] .contact-panel .panel-title{font-size:15px!important;letter-spacing:0}
+html[lang="ur"] .contact-panel a:has(bdi){direction:ltr;text-align:right;unicode-bidi:isolate}
+html[lang="ur"] .footer-layout p,html[lang="ur"] .footer-layout small{font-size:15px}
+html[lang="ur"] .footer-brand{font-family:"Noto Nastaliq Urdu",serif;font-size:18px}
+html[lang="ur"] .utility-bar{font-size:14px;letter-spacing:0}
+html[lang="ur"] .hero-corner-accent{inset-inline-end:-18px}
+html[lang="ur"] .about-quote:before{inset:0 -28px auto auto}
+@media(max-width:1150px){.nav{gap:12px}.nav nav{gap:13px}.brand strong{font-size:19px}.brand small{font-size:8px}.nav .nav-cta{padding:12px 13px}.language-switch a{padding:6px 10px}html[lang="ur"] .brand strong{font-size:20px}}
+@media(max-width:900px){.nav{min-height:78px}.nav nav{top:78px;z-index:30;order:10;margin:0}.header-actions{margin-inline-start:auto}.menu-toggle{display:flex;align-items:center;gap:8px;border:1px solid #cce1de;background:#fff;padding:11px 14px;border-radius:8px;color:var(--navy);font-weight:700}.nav nav{display:none}.nav nav.open{display:flex}.hero-layout{grid-template-columns:1fr!important;padding-top:65px}.hero-visual{max-width:525px;margin:16px auto 0}.hero h1{font-size:clamp(43px,7.6vw,62px)}.trust-grid>div{padding:15px}.trust-text{font-size:11px}html[lang="ur"] .hero h1{font-size:clamp(38px,6vw,50px)}html[lang="ur"] .section-heading h2{font-size:40px}}
+@media(max-width:640px){.utility-inner{min-height:30px}.utility-inner>span{max-width:64%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.nav{gap:7px;min-height:74px}.nav nav{top:74px}.brand strong{font-size:17px}.brand small{font-size:7px}.brand img{width:41px;height:41px}.header-actions{gap:8px}.language-switch{padding:3px}.language-switch a{font-size:11px;padding:6px 7px}.menu-toggle{padding:9px 10px;font-size:12px}.hero-layout{padding:55px 0 60px}.hero h1{letter-spacing:-2.5px}.hero-foot{margin-top:33px}.visual-frame{height:400px}.trust-grid{grid-template-columns:1fr 1fr}.trust-grid>div{min-height:104px;gap:9px;padding:12px 8px}.trust-grid>div:last-child{grid-column:span 2;border-top:1px solid #ffffff30;min-height:70px}.trust-num{font-size:31px}.trust-icon{font-size:26px}.trust-text{font-size:11px}.section-heading h2,.about h2,.contact h2{letter-spacing:-1.9px}.service-card{padding:25px}.contact-panel{gap:15px}.mobile-appointment{display:flex;position:fixed;z-index:25;bottom:15px;left:50%;transform:translateX(-50%);min-width:min(340px,calc(100vw - 36px));justify-content:center;align-items:center;gap:10px;background:#116b61;color:#fff;text-decoration:none;font-weight:800;font-size:14px;padding:15px 25px;border:1px solid #b8e0d2;border-radius:38px;box-shadow:0 8px 38px #102e6266}.mobile-appointment span{font-size:20px}.footer{padding-bottom:98px}html[lang="ur"] .brand strong{font-size:18px}html[lang="ur"] .brand small{font-size:9px}html[lang="ur"] .menu-toggle{font-size:13px}html[lang="ur"] .hero h1{font-size:34px;line-height:2}html[lang="ur"] .hero-lead{font-size:18px}html[lang="ur"] .section-heading h2,html[lang="ur"] .about h2,html[lang="ur"] .contact h2{font-size:30px;line-height:2.1}html[lang="ur"] .trust-text{font-size:15px}html[lang="ur"] .mobile-appointment{font-size:17px}}
+@media(max-width:390px){.brand strong{font-size:14px}.brand small{font-size:6px}.brand img{width:36px;height:36px}.language-switch a{padding:5px 6px}.menu-toggle{padding:8px 7px}.hero h1{font-size:37px}html[lang="ur"] .brand strong{font-size:16px}html[lang="ur"] .brand small{font-size:8px}html[lang="ur"] .hero h1{font-size:29px}}

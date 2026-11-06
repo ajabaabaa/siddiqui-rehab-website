@@ -1,15 +1,30 @@
-# Siddiqui Rehab
+# Siddiqui Rehab — Bilingual website
 
-Mobile-first website for Siddiqui Rehab, Physiotherapy & Rehabilitation, Johar Town, Lahore.
+English and Urdu physiotherapy website for Siddiqui Rehab, Johar Town, Lahore.
 
-## Local run
+## Languages
 
-`npm start` starts the HTTP server on port 3000. `npm test` runs content checks. No npm dependencies or build step are needed.
+- `/` — English
+- `/ur` — Urdu, rendered right-to-left with Urdu typography
+- Language switching uses ordinary links, not cookies, third-party translation or automatic translation.
+- English is maintained in `index.html`; Urdu is generated from reviewed strings in `scripts/build-bilingual.js` with `npm run build:i18n`. Both HTML pages are committed for fast delivery and search engine access.
 
-## Railway
+## Development
 
-Connect this GitHub repository to a Railway service. Railway recognizes Node.js via package.json and starts with `npm start`, listening on Railway's `PORT`. Check `/health` for a basic health response.
+`npm run build:i18n` regenerates Urdu; `npm test` verifies language coverage, contacts, accessibility wiring and static assets; `npm start` starts the server on `$PORT` or 3000.
 
-## Content and launch notes
+## Deployment
 
-Contact details and 30-year experience statement came from the clinic's promotional flyer. Clinic hours, professional credentials beyond '(PT)', testimonials, and medical claims were intentionally not invented. Confirm WhatsApp number, branding/logo rights and map pin before public promotion. Appointment buttons open WhatsApp, telephone or email; no medical data is collected by the website.
+Railway project: https://railway.com/project/6a5bb570-b93c-4823-ad2f-26bd25f13f47
+
+Production: https://siddiqui-rehab-production.up.railway.app
+
+Push to `main` for Railway's GitHub-connected deployment. `/health` reports `{"status":"ok"}`.
+
+## Safety and launch notes
+
+- Contact numbers, location, treatments and 30-year experience claim come from the clinic flyer.
+- No patient intake form or personal medical data collection is present.
+- Clinic hours, credentials, photos, reviews, recovery guarantees and clinical outcomes were not invented.
+- WhatsApp links use a language-appropriate prefilled appointment message; they open an external service.
+- Confirm exact Google Maps pin, correct WhatsApp number, original logo artwork and Urdu wording with the clinic before public marketing.
